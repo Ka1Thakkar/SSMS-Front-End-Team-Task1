@@ -25,7 +25,7 @@ const dm = DM_Serif_Display({ weight:['400'], subsets: ['latin'] })
 export default function Home() {
   return (
     <div className='md:pb-0 pb-10 overflow-x-hidden'>
-      <video autoplay="autoplay" id="coverVideo" loop="loop" muted="muted" playsinline="playsinline" poster="https://static.spotapps.co/web/americanalasvegas--com/custom/video_poster.jpg" className='w-full h-full'>
+      <video autoPlay id="coverVideo" loop muted playsInline poster="https://static.spotapps.co/web/americanalasvegas--com/custom/video_poster.jpg" className='w-full h-full'>
         <source src="https://static.spotapps.co/website_videos/Americana_Website_Intro_EditedVideo_01142022_Vimeo720p30.m4v" type="video/mp4" />
       </video>
       <div className='text-white bg-bgred text-xl py-5 md:flex md:justify-center md:items-center lg:py-[30px] gap-2'>
