@@ -49,12 +49,12 @@ export default function Home() {
       <Reservation />
       <ImageGrid />
       <ReviewsComp />
-      <div className='lg:flex'>
+      {/* <div className='lg:flex'> */}
         <Newsletter />
-        <div className='max-h-[420px] -z-50'>
+        {/* <div className='md:w-1/2 w-screen'>
           <Map />
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
       <Contact />
       <PoweredBy />
       <div className='md:flex bg-bggray text-white gap-2 text-base md:justify-center py-5'>
