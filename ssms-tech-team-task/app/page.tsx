@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 import {MdLocationPin} from'react-icons/md'
 import About from '@/Components/About'
@@ -5,6 +6,7 @@ import Catering from '@/Components/Catering'
 import Carousel from '@/Components/BootstrapCarousel'
 import dynamic from 'next/dynamic.js'
 const Map = dynamic(() => import("../Components/Map"), { ssr:false })
+import {motion as m} from 'framer-motion'
 
 import { DM_Serif_Display } from 'next/font/google'
 import Parties from '@/Components/Parties'
@@ -27,9 +29,14 @@ export default function Home() {
         <source src="https://static.spotapps.co/website_videos/Americana_Website_Intro_EditedVideo_01142022_Vimeo720p30.m4v" type="video/mp4" />
       </video>
       <div className='text-white bg-bgred text-xl py-5 md:flex md:justify-center md:items-center lg:py-[30px] gap-2'>
-        <div className='flex justify-center md:text-2xl'>
+        <m.div
+        initial={{opacity:0, y:-50}}
+        whileInView={{opacity:1, y:0}}
+        transition={{duration:0.5, delay:0.2}}
+        viewport={{once:true}}
+        className='flex justify-center md:text-2xl'>
           <MdLocationPin />
-        </div>
+        </m.div>
         <div className='flex justify-center pt-2'>
           <h1 className='text-white text-base md:text-xl'>2620 Regatta Drive, Las Vegas, NV 89128</h1>
         </div>

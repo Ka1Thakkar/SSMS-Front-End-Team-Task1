@@ -1,4 +1,5 @@
 import Image from "next/image";
+import {motion as m} from 'framer-motion'
 import image from "../public/Assets/full.jpg"
 import image1 from "../public/Assets/about_us_right.jpg"
 import image2 from "../public/Assets/about_us_left_1.jpg"
