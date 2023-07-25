@@ -10,13 +10,13 @@ const dm = DM_Serif_Display({subsets:["latin"], weight:["400"]})
 
 export default function Nav3() {
   const collapseItems = [
-    ["MENU",""],
-    ["DRINKS",""],
-    ["CATERING",""],
-    ["EVENTS",""],
-    ["PARTIES",''],
-    ["RESERVE",""],
-    ["JOBS",""],
+    ["MENU","https://americanalasvegas.com/las-vegas-americana-restaurant-food-menu"],
+    ["DRINKS","https://americanalasvegas.com/las-vegas-americana-restaurant-drink-menu"],
+    ["CATERING","https://tmt.spotapps.co/catering?spot_id=77510&callback_url=http%3A%2F%2Famericanalasvegas.com%2F#&source=footer"],
+    ["EVENTS","https://americanalasvegas.com/las-vegas-americana-restaurant-events"],
+    ["PARTIES",'https://tmt.spotapps.co/private-parties?spot_id=77510&callback_url=http%3A%2F%2Famericanalasvegas.com%2F#&source=footer'],
+    ["RESERVE","https://www.opentable.com/restref/client/?restref=269260&rid=269260&datetime=2021-12-08T16%3A00&covers=2&searchdatetime=2021-12-08T16%3A00&partysize=2&corrid=f14ad166-eef5-4429-a767-52c24734e15d"],
+    ["JOBS","https://tmt.spotapps.co/job-listings?spot_id=77510&callback_url=http%3A%2F%2Famericanalasvegas.com%2F#&source=footer"],
   ];
 
   return (
@@ -42,10 +42,10 @@ export default function Nav3() {
                 <Navbar.Link href="#">Company</Navbar.Link>
               </div>
             </Navbar.Content>
-            <Navbar.Link color="inherit" href="#">
+            <Navbar.Link color="inherit" href="https://www.instagram.com/americanalv/">
               <div className=""><AiOutlineInstagram/></div>
             </Navbar.Link>
-            <Navbar.Link color="inherit" href="#">
+            <Navbar.Link color="inherit" href="https://www.yelp.com/biz/americana-las-vegas-2">
               <BsYelp/>
             </Navbar.Link>
             <Navbar.Brand showIn="xs">
@@ -61,9 +61,10 @@ export default function Nav3() {
               css={{
                 minWidth: "100%",
               }}
-              href="#"
+              href={item[1]}
+              target="_blank"
             >
-              <div className={dm.className}><div className="text-buttonbgblue">{item}</div></div>
+              <div className={dm.className}><div className="text-buttonbgblue">{item[0]}</div></div>
             </Link>
           </Navbar.CollapseItem>
         ))}
