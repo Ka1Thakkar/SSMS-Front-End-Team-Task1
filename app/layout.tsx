@@ -20,8 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <div className=' opacity-0 md:opacity-100'>
         <Nav />
-        {/* <Nav3 /> */}
+        </div>
+        <div className='md:opacity-0'>
+        <Nav3 />
+        </div>
         {children}
         <div className='md:hidden'>
           <Nav2 />
