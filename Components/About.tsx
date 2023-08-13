@@ -11,16 +11,16 @@ const dm = DM_Serif_Display({ weight:['400'], subsets: ['latin'] })
 
 const About = () => {
     return (
-        <div className='md:flex bg-bgcolorblue md:items-center'>
+        <div className='md:grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 bg-bgcolorblue overflow-hidden gap-y-10'>
         <m.div
         initial={{opacity:0, x:-50}}
         whileInView={{opacity:1, x:0}}
         transition={{duration:0.5, delay:0.5}}
         viewport={{once:true}}
-        className=' md:w-1/2 bg-bgcolorblue'>
-          <Image src={image1} style={{width: "auto", height:'100%', objectFit: "contain"}} layout='cover' quality={100} alt='Image 1'/>
+        className=' bg-bgcolorblue'>
+          <Image src={image1} style={{width: "100%", height:'100%', objectFit: "cover"}} quality={100} alt='Image 1'/>
         </m.div>
-        <div className=' bg-bgcolorblue py-7 md:w-1/2'>
+        <div className=' bg-bgcolorblue py-2 flex flex-col items-center justify-center'>
           <div className={dm.className}>
             <m.div
             initial={{opacity:0}}

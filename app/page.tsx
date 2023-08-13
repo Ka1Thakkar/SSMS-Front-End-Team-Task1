@@ -42,9 +42,10 @@ export default function Home() {
         </div>
       </div>
       <About />
-      <Decorater />
-      <Catering />
-      <Parties />
+      <div className=' lg:py-20 flex flex-col gap-y-5 md:gap-y-20'>
+        <Catering />
+        <Parties />
+      </div>
       <BootstrapCarousel />
       <Reservation />
       <ImageGrid />

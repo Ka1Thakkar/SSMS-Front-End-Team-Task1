@@ -4,6 +4,7 @@ import { DM_Serif_Display } from 'next/font/google'
 import { Parisienne } from "next/font/google";
 import { AiFillStar } from "react-icons/ai";
 import {FaQuoteLeft, FaQuoteRight} from "react-icons/fa"
+import ReviewCarouselComp from "./ReviewCarouselComp";
 
 const dm = DM_Serif_Display({ weight:['400'], subsets: ['latin'] })
 const paris = Parisienne({ weight:['400'], subsets: ['latin'] })
@@ -40,7 +41,7 @@ const ReviewsComp = () => {
                 <h1 className="text-center text-4xl md:text-7xl pt-[45px] pb-[10px]">REVIEWS</h1>
             </div>
             <div className="w-screen">
-                <CarouselComp loop>
+                <ReviewCarouselComp loop>
                     {reviews.map((review,i)=>{
                         return(
                         <div className=" w-screen text-center flex-[0_0_100%]" key={i}>
@@ -66,7 +67,7 @@ const ReviewsComp = () => {
                             </div>
                         </div>)
                     })}
-                </CarouselComp>
+                </ReviewCarouselComp>
             </div>
         </div>
     );

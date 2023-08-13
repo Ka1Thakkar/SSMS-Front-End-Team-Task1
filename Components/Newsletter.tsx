@@ -12,9 +12,9 @@ const Newsletter = () => {
                 <h1 className='text-center text-4xl pb-[10px] lg:text-7xl'>NEWSLETTER</h1>
             </div>
             <div className={paris.className}>
-                <p className='text-xl text-buttonbgblue text-center pb-[40px]'>Stay tuned for updates</p>
+                <p className='text-xl md:text-3xl text-buttonbgblue text-center pb-[40px]'>Stay tuned for updates</p>
             </div>
-            <p className='text-black text-center px-[25px]'>Sign up for our newsletter & get exclusive offers and invites!</p>
+            <p className='text-black text-center md:text-xl px-[25px]'>Sign up for our newsletter & get exclusive offers and invites!</p>
             <div className='flex justify-center w-full px-[25px] pt-[35px] text-black'>
                 <input placeholder='Your Email...' className='w-full bg-bgcolorblue text-black border-b-2 border-b-black py-2'/>
             </div>

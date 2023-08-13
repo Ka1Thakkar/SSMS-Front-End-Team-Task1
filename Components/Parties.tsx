@@ -13,7 +13,7 @@ const dm = DM_Serif_Display({subsets:['latin'], weight:['400']})
 
 const Parties = () => {
     return (
-        <div className='md:flex md:items-center'>
+        <div className='md:flex md:items-center md:h-[471px] overflow-hidden'>
         <m.div
         initial={{opacity:0, x:-50}}
         whileInView={{opacity:1, x:0}}

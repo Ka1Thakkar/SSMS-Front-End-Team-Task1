@@ -13,14 +13,14 @@ const dm = DM_Serif_Display({ weight:['400'], subsets: ['latin'] })
 
 const Catering = () => {
     return (
-        <div className='md:flex md:flex-row-reverse md:items-center'>
+        <div className='md:flex md:flex-row-reverse md:items-center md:h-[471px] overflow-hidden'>
         <m.div
         initial={{opacity:0, y:50}}
         whileInView={{opacity:1, y:0}}
         transition={{duration:0.5, delay:0.5}}
         viewport={{once:true}}
-        className='md:w-1/2 md:px-10 lg:pt-10 lg:pb-5 lg:px-20'>
-          <Image src={image} style={{width: "100%", height:'auto', objectFit: "contain"}} layout='cover' quality={100} alt='Image 1'/>
+        className='md:w-1/2 md:px-10 lg:px-20'>
+          <Image src={image} style={{width: "100%", height:'100%', objectFit: "cover"}} quality={100} alt='Image 1'/>
         </m.div>
         <div className=' bg-white py-7 md:w-1/2'>
           <div className={dm.className}>
