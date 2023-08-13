@@ -1,14 +1,10 @@
-'use client'
+import React from "react"
+import { Map, Marker } from "pigeon-maps"
 
-
-import { useState } from 'react'
-import Image from 'next/image'
-import image from '../public/Assets/americana-las-vegas-map.jpg'
-
-const Map = () => {
-    return (
-        <Image src={image} style={{height:'418px',objectFit:'cover'}} alt='...' quality={100} className=' w-full'/>
-    )
+export default function MyMap() {
+  return (
+    <Map height={500} defaultCenter={[36.20740085393897, -115.26789593248834]} defaultZoom={12} metaWheelZoom={true}>
+      <Marker width={40} anchor={[36.20740085393897, -115.26789593248834]} />
+    </Map>
+  )
 }
-
-export default Map;

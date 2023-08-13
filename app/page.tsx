@@ -3,17 +3,14 @@ import Image from 'next/image'
 import {MdLocationPin} from'react-icons/md'
 import About from '@/Components/About'
 import Catering from '@/Components/Catering'
-import Carousel from '@/Components/BootstrapCarousel'
-import dynamic from 'next/dynamic.js'
-const Map = dynamic(() => import("../Components/Map"), { ssr:false })
 import {motion as m} from 'framer-motion'
+import MyMap from '@/Components/Map'
 
 import { DM_Serif_Display } from 'next/font/google'
 import Parties from '@/Components/Parties'
 import Reservation from '@/Components/Reservations'
 import ReviewsComp from '@/Components/ReviewsComp'
 import Newsletter from '@/Components/Newsletter'
-import Decorater from '@/Components/decorater'
 import BootstrapCarousel from '@/Components/BootstrapCarousel'
 import ImageGrid from '@/Components/ImageGrid'
 import Contact from '@/Components/Contact'
@@ -50,12 +47,14 @@ export default function Home() {
       <Reservation />
       <ImageGrid />
       <ReviewsComp />
-      {/* <div className='lg:flex'> */}
-        <Newsletter />
-        {/* <div className='md:w-1/2 w-screen'>
-          <Map />
-        </div> */}
-      {/* </div> */}
+      <div className='lg:flex'>
+        <div className='w-1/2'>
+          <Newsletter />
+        </div>
+        <div className='w-1/2'>
+          <MyMap />
+        </div>
+      </div>
       <Contact />
       <PoweredBy />
       <div className='md:flex bg-bggray text-white gap-2 text-base md:justify-center py-5'>
