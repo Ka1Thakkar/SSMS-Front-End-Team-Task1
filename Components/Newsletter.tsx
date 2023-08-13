@@ -7,7 +7,7 @@ const dm = DM_Serif_Display({ weight:['400'], subsets: ['latin'] })
 
 const Newsletter = () => {
     return (
-        <section className=' bg-bgcolorblue pb-[10px] pt-[45px] flex flex-col justify-center h-full px-52'>
+        <section className=' bg-bgcolorblue pb-[10px] pt-[45px] flex flex-col justify-center h-full md:px-52 px-10'>
             <div className={dm.className}>
                 <h1 className='text-center md:text-left text-4xl pb-[10px] lg:text-6xl'>NEWSLETTER</h1>
             </div>
