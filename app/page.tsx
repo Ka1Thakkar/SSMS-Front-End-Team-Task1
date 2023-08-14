@@ -48,10 +48,10 @@ export default function Home() {
       <ImageGrid />
       <ReviewsComp />
       <div className='lg:flex'>
-        <div className='md:w-1/2'>
+        <div className='lg:w-1/2'>
           <Newsletter />
         </div>
-        <div className='md:w-1/2'>
+        <div className='lg:w-1/2'>
           <MyMap />
         </div>
       </div>

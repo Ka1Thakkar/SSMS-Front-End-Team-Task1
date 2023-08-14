@@ -7,12 +7,12 @@ const dm = DM_Serif_Display({ weight:['400'], subsets: ['latin'] })
 
 const Newsletter = () => {
     return (
-        <section className=' bg-bgcolorblue pb-[10px] pt-[45px] flex flex-col justify-center h-full md:px-52 px-10'>
+        <section className=' bg-bgcolorblue flex flex-col pt-[45px] pb-[45px] justify-center h-full md:px-20 xl:px-40 2xl:px-52 px-10'>
             <div className={dm.className}>
-                <h1 className='text-center md:text-left text-4xl pb-[10px] lg:text-6xl'>NEWSLETTER</h1>
+                <h1 className='text-center lg:text-left text-4xl pb-[10px] lg:text-6xl'>NEWSLETTER</h1>
             </div>
             <div className={paris.className}>
-                <p className='text-xl md:text-left md:text-3xl text-buttonbgblue text-center pb-[40px]'>Stay tuned for updates</p>
+                <p className='text-xl lg:text-left md:text-3xl text-buttonbgblue text-center pb-[40px]'>Stay tuned for updates</p>
             </div>
             <p className='text-black md:text-left md:px-0 text-center md:text-lg px-[25px]'>Sign up for our newsletter & get exclusive offers and invites!</p>
             <div className='md:flex justify-center items-center gap-5'>
